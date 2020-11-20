@@ -1,0 +1,14 @@
+<h1><%= @offline_worker.name %>'s Conversations</h1>
+Latest Conversations: (<%= @conversations.count %>)
+<%= @conversations.last.updated_at.strftime("%Y %m %d") %>
+
+Email: <%= current_user.email %>
+<% if @offline_worker %>
+First Name: <%= @offline_worker.first_name %>
+<% end %>
+
+<% if current_user %>
+  <%= @offline_workers.count %> workers!
+  <% @offline_workers.each do |offline_worker| %>
+  <% end %>
+<% end %>

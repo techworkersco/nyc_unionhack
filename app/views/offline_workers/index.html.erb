@@ -1,0 +1,12 @@
+<h1>OfflineWorkers#index</h1>
+
+Email: <%= current_user.email %>
+<% if @offline_worker %>
+First Name: <%= @offline_worker.first_name %>
+<% end %>
+
+<% if current_user %>
+  <%= @offline_workers.count %> workers!
+  <% @offline_workers.each do |offline_worker| %>
+  <% end %>
+<% end %>

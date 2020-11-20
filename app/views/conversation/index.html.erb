@@ -1,0 +1,9 @@
+<h1>Organizing Overview</h1>
+
+<% if @conversations %>
+  Total of <%= @conversations.length %> conversations
+
+  <% @conversations.each do |convo| %>
+    <%= link_to(convo.offline_worker.name, convo) %>
+  <% end %>
+<% end %>
