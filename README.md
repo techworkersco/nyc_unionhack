@@ -1,5 +1,5 @@
-# nyc_unionhack
-TWC NYC is participating in https://www.unionhack.de/en/
+# TWC Union Hack
+TWC (NYC Berlin) are participating in https://www.unionhack.de/en/
 
 ## Installation
 
