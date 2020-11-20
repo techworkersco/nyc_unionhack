@@ -1,2 +1,2 @@
-# nyc_unionhack
-TWC NYC is participating in https://www.unionhack.de/en/
+# twc_unionhack
+TWC Berlin&NYC is participating in https://www.unionhack.de/en/
