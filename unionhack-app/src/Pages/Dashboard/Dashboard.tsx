@@ -109,7 +109,7 @@ class Dashboard extends React.Component<DashboardProps, DashboardState> {
           <div className="mb-4">
             <div className='p-3 flex items-center'>
               <h3 className='col'>Recent Conversations</h3>
-              <Link to="">View All</Link>
+              <Link to="/conversations">View All</Link>
             </div>
             <ul>
               {this.state.conversations.map(conversation => (

@@ -21,6 +21,7 @@ function App() {
           <Route exact path="/campaign/:id" component={Campaign} />
           <Route exact path="/worker/:id" component={WorkerProfile} />
           <Route exact path="/worker/:id/conversations/:id" component={Conversations} />
+          <Route exact path="/conversations" component={Conversations} />
         </Switch>
       </>
     </Router>
