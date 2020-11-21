@@ -1,0 +1,51 @@
+.conversation-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 20px;
+}
+
+.conversation-date {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: bold;
+}
+
+.conversation-score {
+  background: #0BF9A3;
+  color: #000;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conversation-card {
+  background: #252525;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.conversation-card-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.conversation-notes-text {
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.7;
+}
+
+.conversation-participant-list li {
+  margin-bottom: 8px;
+  opacity: 0.7;
+}
+
+.conversation-participant-list {
+  margin-bottom: 34px;
+}
