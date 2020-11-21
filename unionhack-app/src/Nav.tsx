@@ -61,7 +61,7 @@ export const Nav = ({title}: {title: string}) => {
               <Link to="/">Structure Tests</Link>
             </li>
             <li className="brd-b-1 p-3">
-              <Link to="/">Worker List</Link>
+              <Link to="/workers">Worker List</Link>
             </li>
           </ul>
           <Link className='p-3' to="/">
