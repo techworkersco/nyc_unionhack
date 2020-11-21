@@ -65,7 +65,7 @@ class WorkerDashboard extends React.Component<Props, State> {
         name: "Sally Worker",
         engagement_level: 3,
         conversation_count: 1,
-        team: "Sales",
+        team: "Marketing",
       },
       {
         id: 3, 
