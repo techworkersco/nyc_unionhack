@@ -9,6 +9,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import Campaign from './Pages/Campaign/Campaign';
 import WorkerProfile from './Pages/WorkerProfile/WorkerProfile';
 import Conversations from './Pages/WorkerProfile/Conversations/Conversations';
+import WorkersTable from './Pages/WorkersTable/WorkersTable';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/worker/:id" component={WorkerProfile} />
           <Route exact path="/worker/:id/conversations/:id" component={Conversations} />
           <Route exact path="/conversations" component={Conversations} />
+          <Route exact path="/workers" component={WorkersTable}/> 
         </Switch>
       </>
     </Router>
