@@ -96,23 +96,23 @@ class WorkerDashboard extends React.Component<Props, State> {
       <div className="worker-list">
         <Nav title="Worker List" />
 
-        <section className="worker-header">
+        <section className="worker-list-header">
           <div className="worker-metadata">{knownWorkersCount} Known Workers</div>
           <div className="worker-metadata">{knownTeamsCount} Teams</div>
         </section>
 
-        <table style={styles.table}>
+        <table className="worker-table" style={styles.table}>
             <tbody>
-              <tr key="header">
+              <tr className="worker-table-row" key="header">
                  <td></td>
-                 <td className="mini-title">Name</td>
-                 <td className="mini-title">Number of Conversations</td>
+                 <td className="worker-table-header">Name</td>
+                 <td className="worker-table-header">Number of Conversations</td>
                  <td></td>
               </tr> 
               {workers.map( worker => {
                 return(
-                    <tr style={worker.id % 2 > 0 ? styles.oddRow : {}}  key={worker.id}>
-                      <td className="worker-score">{worker.engagement_level}</td>
+                    <tr className="worker-table-row" style={worker.id % 2 > 0 ? styles.oddRow : {}}  key={worker.id}>
+                      <td className="worker-table-score">{worker.engagement_level}</td>
                       <td style={styles.td}>{worker.name}</td>
                       <td style={styles.td}>{worker.conversation_count}</td>
                       <td style={styles.td}><Link to={`/worker/${worker.id}`}><span className="link-arrow">&gt;</span></Link></td>

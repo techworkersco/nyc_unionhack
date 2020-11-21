@@ -2,11 +2,11 @@
   font-weight: bold;
 }
 
-.worker-header {
+.worker-list-header {
   margin: 0 20px 40px;
 }
 
-.mini-title {
+.worker-table-header {
   font-size: 10px;
   line-height: 11px;
   letter-spacing: 0.02em;
@@ -15,7 +15,7 @@
   margin-bottom: 20px;
 }
 
-.worker-score {
+.worker-table-score {
   background: #0BF9A3;
   color: #000;
   height: 24px;
@@ -31,25 +31,20 @@
   color: #fff;
 }
 
-.link-arrow {
-  flex-grow: 1;
-  text-align: right;
-  margin-right: 10px;
-}
-
 td {
   margin-top:20px;
   margin-bottom:20px;
-  margin-right:20px;  
+  margin-right:10px;  
   margin-left:20px;  
   border: none; 
+  text-align:center;
 }
 
-tr {
+.worker-table-row {
   margin-top: 10px;
 }
 
-table { 
+table  { 
   border-collapse:collapse 
 }
 
