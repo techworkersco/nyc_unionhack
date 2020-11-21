@@ -34,12 +34,12 @@ export const Nav = ({title}: {title: string}) => {
           "active": showNav,
         })}>
         <nav>
-          <Link className="p-3" to="">
+          <Link className="block p-3" to="">
             Your Account Profile
           </Link>
           <ul className="p-3">
             <li>
-              <h3>Logged In Campaigns</h3>
+              <h3 className="mb-3">Logged In Campaigns</h3>
             </li>
             <li className='mb-2 flex items-center'>
               <span className="bg-white p-3 br-4 mr-2" />
