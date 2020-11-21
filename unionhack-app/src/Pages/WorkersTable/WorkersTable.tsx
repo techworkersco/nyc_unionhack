@@ -12,7 +12,7 @@ const styles = {
     paddingLeft: "10px",
     paddingTop: "10px",
     border: "0px",
-  }, 
+  },
   td: {
     width: "300px",
   },
@@ -27,10 +27,6 @@ type Worker = {
   team: string,
   engagement_level: number,
   conversation_count: number,
-}
-
-type WorkerByType = {
-  [key: string]: Worker[];
 }
 
 type Params = {
@@ -54,49 +50,47 @@ class WorkerDashboard extends React.Component<Props, State> {
     super(props);
 
     const workers: Worker[] = [{
-        id: 1, 
+        id: 1,
         name: "Joe Worker",
         engagement_level: 3,
         conversation_count: 3,
         team: "Marketing",
       },
       {
-        id: 2, 
+        id: 2,
         name: "Sally Worker",
         engagement_level: 3,
         conversation_count: 1,
         team: "Marketing",
       },
       {
-        id: 3, 
+        id: 3,
         name: "Ashley Worker",
         engagement_level: 3,
         conversation_count: 2,
         team: "Design",
       },
       ]
-    
+
     const teams =_.uniq(_.map(workers, 'team'));
 
     this.state = {
-      workers, 
+      workers,
       selectedTeam: '',
-      teams, 
+      teams,
       knownWorkersCount: workers.length,
       knownTeamsCount: teams.length,
     }
   }
 
   render() {
-    const { workers, selectedTeam, teams, knownTeamsCount, knownWorkersCount } = this.state;
-
-    // const workersByTeam: WorkerByType = _.groupBy(workers, 'team');
+    const { workers, knownTeamsCount, knownWorkersCount } = this.state;
 
     return (
       <div className="worker-list">
         <Nav title="Worker List" />
 
-        <section className="worker-list-header">
+        <section className="worker-list-header pt-4">
           <div className="worker-metadata">{knownWorkersCount} Known Workers</div>
           <div className="worker-metadata">{knownTeamsCount} Teams</div>
         </section>
@@ -108,7 +102,7 @@ class WorkerDashboard extends React.Component<Props, State> {
                  <td className="worker-table-header">Name</td>
                  <td className="worker-table-header">Number of Conversations</td>
                  <td></td>
-              </tr> 
+              </tr>
               {workers.map( worker => {
                 return(
                     <tr className="worker-table-row" style={worker.id % 2 > 0 ? styles.oddRow : {}}  key={worker.id}>
@@ -121,7 +115,7 @@ class WorkerDashboard extends React.Component<Props, State> {
               })}
             </tbody>
         </table>
-          
+
       </div>
     );
   }

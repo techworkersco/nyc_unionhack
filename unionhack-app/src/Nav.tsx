@@ -55,7 +55,7 @@ export const Nav = ({title}: {title: string}) => {
               <Link to="/">Readiness Overview</Link>
             </li>
             <li className="brd-b-1 p-3">
-              <Link to="/">Workplace Conversations</Link>
+              <Link to="/conversations">Workplace Conversations</Link>
             </li>
             <li className="brd-b-1 p-3">
               <Link to="/">Structure Tests</Link>

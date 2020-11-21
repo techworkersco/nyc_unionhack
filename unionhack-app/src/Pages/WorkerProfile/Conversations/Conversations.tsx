@@ -79,9 +79,9 @@ class WorkerDashboard extends React.Component<Props, State> {
 
   render() {
     return (
-      <div>
+      <>
         <Nav title="Conversations" />
-        <ul>
+        <ul className='pt-4'>
           {this.state.conversations.map(conversation => {
             const { date, score, organizer, worker } = conversation;
             return (
@@ -113,7 +113,7 @@ class WorkerDashboard extends React.Component<Props, State> {
             );
           })}
         </ul>
-      </div>
+      </>
     );
   }
 }

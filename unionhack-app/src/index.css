@@ -255,3 +255,22 @@ a {
 .red {
   color: #FF2525;
 }
+.text-right {
+  text-align: right;
+}
+.row {
+  width: 100%;
+}
+.w-4 {
+  min-width: 33%;
+  width: 33%;
+}
+.w-6 {
+  min-width: 50%;
+  width: 50%;
+}
+.w-8 {
+  min-width: 67%;
+  width: 67%;
+}
+

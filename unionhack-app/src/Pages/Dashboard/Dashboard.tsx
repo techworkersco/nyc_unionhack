@@ -3,8 +3,8 @@ import {
   Link
 } from 'react-router-dom';
 import {Nav} from '../../Nav';
-import {ProgressBar} from '../../Components/ProgressBar'
-// import './App.css';
+import {ProgressBar} from '../../Components/ProgressBar';
+import caret from '../../assets/caret.svg';
 
 type StatusUnion = 'green' | 'blue' | 'purple' | 'yellow' | 'red' | 'grey'
 
@@ -88,28 +88,32 @@ class Dashboard extends React.Component<DashboardProps, DashboardState> {
         <Nav title="Campaign A" />
         <div className='pb-3 pt-4'>
           <div className="p-3 mb-3">
-            <h2 className='mb-3'>4 Workers away from Goal</h2>
-            <ProgressBar className='mb-4' percentage={62} />
-
-            <div className="flex mt-3">
-              <div className="col">
-                <div className="grey fsSmall uppercase mb-2">Current Support</div>
-                <div className='fs1'>62%</div>
-                <div className="grey">Union Card Signing</div>
-              </div>
-              <div className="col">
-                <div className="grey fsSmall uppercase mb-2">Goal</div>
-                <div className='grey fs1'>85%</div>
-                <div className="grey">Union Card Signing</div>
+            <div className='flex items-center'>
+              <h2 className='mb-3 w-6'>
+                4 Workers away from Goal
+              </h2>
+              <div className='col text-right'>
+                <img
+                  alt=""
+                  src={caret}
+                />
               </div>
             </div>
+            <ProgressBar className='mb-4' percentage={62} />
           </div>
 
           {/* @TODO pull conversations/structure tests list from API */}
           <div className="mb-4">
             <div className='p-3 flex items-center'>
-              <h3 className='col'>Recent Conversations</h3>
-              <Link to="/conversations">View All</Link>
+              <h3 className='col w-8'>Recent Conversations</h3>
+              <div className='col w-4 text-right'>
+                <Link to="/conversations">
+                  <img
+                    alt=""
+                    src={caret}
+                  />
+                </Link>
+              </div>
             </div>
             <ul>
               {this.state.conversations.map(conversation => (
@@ -132,8 +136,15 @@ class Dashboard extends React.Component<DashboardProps, DashboardState> {
 
           <div className="pb-4 mb-4">
             <div className='p-3 flex items-center'>
-              <h3 className='col'>Structure Tests</h3>
-              <Link to="">View All</Link>
+              <h3 className='col w-8'>Structure Tests</h3>
+              <div className='col w-4 text-right'>
+                <Link to="/structure-tests">
+                  <img
+                    alt=""
+                    src={caret}
+                  />
+                </Link>
+              </div>
             </div>
             <ul>
               {this.state.structureTests.map(test => (
