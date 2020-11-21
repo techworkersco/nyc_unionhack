@@ -2,6 +2,8 @@ import React from 'react';
 import {
   Link
 } from 'react-router-dom';
+import {Nav} from '../../Nav';
+import dashboard from '../../assets/dashboard.png'
 // import './App.css';
 
 type Campaign = {
@@ -40,20 +42,9 @@ class Dashboard extends React.Component<DashboardProps, DashboardState> {
 
   render() {
     return (
-      <div>
-        <h1>Dashboard</h1>
-        Your campaigns:
-        <ul>
-          {this.state.campaigns.map((campaign) => {
-            return (
-              <li key={campaign.id}>
-                <Link to={`/campaign/${campaign.id}`}>{campaign.name}</Link>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-  
+      <>
+        <Nav title="Campaign A" />
+      </>
     );
   }
 }
