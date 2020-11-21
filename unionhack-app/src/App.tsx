@@ -7,7 +7,8 @@ import {
 import './App.css';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Campaign from './Pages/Campaign/Campaign';
-import WorkerDashboard from './Pages/WorkerDashboard/WorkerDashboard';
+import WorkerProfile from './Pages/WorkerProfile/WorkerProfile';
+import Conversations from './Pages/WorkerProfile/Conversations/Conversations';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route exact path="/" component={Dashboard} />
-          <Route path="/campaign/:id" component={Campaign} />
-          <Route path="/worker/:id" component={WorkerDashboard} />
+          <Route exact path="/campaign/:id" component={Campaign} />
+          <Route exact path="/worker/:id" component={WorkerProfile} />
+          <Route exact path="/worker/:id/conversations/:id" component={Conversations} />
         </Switch>
       </>
     </Router>
