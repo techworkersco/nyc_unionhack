@@ -1,0 +1,53 @@
+.worker-list {
+  font-weight: bold;
+}
+
+.worker-list-header {
+  margin: 0 20px 40px;
+}
+
+.worker-table-header {
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 0.02em;
+  color: rgba(133, 133, 133, 0.7);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.worker-table-score {
+  background: #0BF9A3;
+  color: #000;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.worker-metadata {
+  font-size: 24px;
+  color: #fff;
+}
+
+td {
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:10px;  
+  margin-left:20px;  
+  border: none; 
+  text-align:center;
+}
+
+.worker-table-row {
+  margin-top: 10px;
+}
+
+table  { 
+  border-collapse:collapse 
+}
+
+a {
+  text-decoration: none;
+}
